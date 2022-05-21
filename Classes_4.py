@@ -89,7 +89,8 @@ class Student:
                 lecturer.grades[course] = [grade]
         else:
             return print(
-                f'Ошибка: студент {self.name} {self.surname}  не проходит/проходил данный курс либо лектор не читал лекцию на данном курсе')
+                f'Ошибка: студент {self.name} {self.surname}  не проходит/проходил данный курс либо\
+                 лектор не читал лекцию на данном курсе')
 
 
 class Mentor:
@@ -188,7 +189,8 @@ class Reviewer(Mentor):
                 student.grades[course] = [grade]
         else:
             return print(
-                f'Ошибка, {self.name} {self.surname} не может оценивать работу данного курса или студент не проходит данный курс')
+                f'Ошибка, {self.name} {self.surname} не может оценивать работу данного курса или студент не\
+                 проходит данный курс')
 
 
 def mean_grade_course(list_of_lecturers, course):
