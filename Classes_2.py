@@ -14,11 +14,10 @@ class Mentor:
         self.courses_attached = []
         
 
-
 class Lecturer(Mentor):
+    pass
 
 class Reviewer(Mentor):
-    
     def rate_hw(self, student, course, grade):
         if isinstance(student, Student) and course in self.courses_attached and course in student.courses_in_progress:
             if course in student.grades:
@@ -31,4 +30,3 @@ class Reviewer(Mentor):
 
 alex = Lecturer('alex', 'ivanov') 
 print(alex.surname)
-print(alex.rate_hw)

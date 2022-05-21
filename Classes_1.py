@@ -23,10 +23,11 @@ class Mentor:
             return 'Ошибка'
 
 class Lecturer(Mentor):
+    pass
 
 class Reviewer(Mentor):
+    pass
 
 
 alex = Lecturer('alex', 'ivanov') 
 print(alex.surname)
-print(alex.rate_hw)
