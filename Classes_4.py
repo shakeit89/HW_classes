@@ -94,7 +94,6 @@ class Mentor:
         
 
 class Lecturer(Mentor):
-
     def __init__(self, name, surname, courses_attached):
         super().__init__(name,surname, courses_attached)
         self.grades = {} 
@@ -163,6 +162,7 @@ class Lecturer(Mentor):
         else:
             return f'Ошибка! При сравнении оценок оба должны быть лекторами!'
 
+
 class Reviewer(Mentor):
     def __str__(self):
         return f'Имя ревьювера: {self.name}\n'\
@@ -195,6 +195,7 @@ def mean_grade_course(list_of_lecturers, course):
         count += len(lecturer.grades[course])
         sum_of_grades += sum(lecturer.grades[course])
     return sum_of_grades / count
+
 
 #создадим студентов
 stud1 = Student('Vasya', 'Vasin', 'm')
