@@ -11,8 +11,8 @@ class Student:
         return f'Имя студента: {self.name}\n' \
             f'Фамилия студента: {self.surname} \n'\
             f'Средняя оценка за домашние задания: {self.mean_grade()} \n'\
-            f'Курсы в процессе изучения: {", ".join(map(str, self.courses_in_progress))} \n'\
-            f'Завершенные курсы: {", ".join(map(str, self.finished_courses))} \n'
+            f'Курсы в процессе изучения: {", ".join(self.courses_in_progress)} \n'\
+            f'Завершенные курсы: {", ".join(self.finished_courses)} \n'
 
     def __gt__(self, another_student):
         if isinstance(another_student, Student):
